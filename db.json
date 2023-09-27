@@ -1,0 +1,316 @@
+{
+    "data": [
+     {
+      "id" :1,
+      "image": "https://img4.nbstatic.in/tr:w-350/60deccba40e9df000b9f27ac.jpg",
+      "name":"Lord Of The Drinks Chamber",
+      "address":"Rajouri Garden",
+      "deal":"Drinks with Starters",
+      "price":799,
+      "bought":13030
+      
+     },
+     {
+      "id" :2,
+      "image": "https://img4.nbstatic.in/tr:w-350/61c41a491e2731000ba4280d.jpg",
+      "name":"TEO - Lounge & Bar",
+      "address":"Punjabi Bagh West",
+      "deal":"Drinks with Starters",
+      "price":600,
+      "bought":11102
+      
+     },
+     {
+      "id" :3,
+      "image": "https://img4.nbstatic.in/tr:w-350/602102ec79600c000b33e564.jpg",
+      "name":"Duty-Free | Vayu Bar",
+      "address":"Rajouri Garden",
+      "deal":"Drinks with Starters",
+      "price":306,
+      "bought":6675
+      
+     },
+     {
+      "id" :4,
+      "image": "https://img4.nbstatic.in/tr:w-350/5fdcacd15cc6f2000b960663.jpg",
+      "name":"The G.T. Road",
+      "address":"Connaught Place ",
+      "deal":"Buffet Offers",
+      "price":1095,
+      "bought":5255
+      
+     },
+     {
+      "id" :5,
+      "image": "https://img4.nbstatic.in/tr:w-350/5f5782eab7b01c000b3d8fdf.jpg",
+      "name":"Warehouse Cafe",
+      "address":"Connaught Place",
+      "deal":"Drinks with Starters",
+      "price":1099,
+      "bought":4873
+      
+     },
+     {
+      "id" :6,
+      "image": "https://img4.nbstatic.in/tr:w-350/5fbcace45cc6f2000bc7fade.jpg",
+      "name":"Castle Barbeque",
+      "address":"Connaught Place",
+      "deal":"Buffet Offers",
+      "price":899,
+      "bought":5825
+      
+     },
+     {
+      "id" :7,
+      "image": "https://img4.nbstatic.in/tr:w-350/6114a79a1e2731000b7036ee.jpg",
+      "name":"Open House Cafe",
+      "address":"Connaught Place",
+      "deal":"Drinks with Starters",
+      "price":999,
+      "bought":4050
+      
+     },
+     {
+      "id" :8,
+      "image": "https://img4.nbstatic.in/tr:w-350/5fdcaf2b5cc6f2000b960679.jpg",
+      "name":"MAD - Music And Drinks",
+      "address":"Rajouri Garden",
+      "deal":"Drinks with Starters",
+      "price":899,
+      "bought":4238
+      
+     },
+     {
+      "id" :9,
+      "image": "https://img4.nbstatic.in/tr:w-350/5f55dda1b7b01c000b3d89a7.jpg",
+      "name":"Local",
+      "address":"Connaught Place",
+      "deal":"Drinks with Starters & Set Menu Meals",
+      "price":499,
+      "bought":3675
+      
+     },
+     {
+      "id" :10,
+      "image": "https://img4.nbstatic.in/tr:w-350/5d3adf98590801000cddde91.jpg",
+      "name":"Sixth Empirica",
+      "address":"Punjabi Bagh West",
+      "deal":"Drinks with Starters",
+      "price":849,
+      "bought":3745
+      
+     },
+     {
+      "id" :11,
+      "image": "https://img4.nbstatic.in/tr:w-350/63d0d7ce8db992000b6231cc.jpg",
+      "name":"Liv Bar",
+      "address":"Aerocity",
+      "deal":"Drinks with Starters",
+      "price":599,
+      "bought":2457
+      
+     },
+     {
+      "id" :12,
+      "image": "https://img4.nbstatic.in/tr:w-350/6120ad6140e9df000b810d18.jpg",
+      "name":"Farmer's Basket At Pluck - Hotel Pullman",
+      "address":"Aerocity",
+      "deal":"Buffet Offers",
+      "price":3481,
+      "bought":1916
+      
+     },
+     {
+      "id" :13,
+      "image": "https://img4.nbstatic.in/tr:w-350/60d989e340e9df000b9f2355.jpg",
+      "name":"Barbeque Nation",
+      "address":"Connaught Place ",
+      "deal":"Buffet Offers",
+      "price":996,
+      "bought":21411
+      
+     },
+     {
+      "id" :14,
+      "image": "https://img4.nbstatic.in/tr:w-350/61e517ca1e2731000bdc4ee5.jpg",
+      "name":"Cafe Pride - Pride Plaza Hotel",
+      "address":"Aerocity",
+      "deal":"Buffet Offers",
+      "price":799,
+      "bought":1879
+      
+     },
+     {
+      "id" :15,
+      "image": "https://img4.nbstatic.in/tr:w-350/63c51a3622b317000b619d07.jpg",
+      "name":"Station Bar",
+      "address":"Connaught Place ",
+      "deal":"Drinks with Starters",
+      "price":899,
+      "bought":1865
+      
+     },
+     {
+      "id" :16,
+      "image": "https://img4.nbstatic.in/tr:w-350/5f588bdcb7b01c000b3d91a7.jpg",
+      "name":"Lord Of The Drinks",
+      "address":"Connaught Place",
+      "deal":"Drinks with Starters",
+      "price":1099,
+      "bought":1410
+      
+     },
+     {
+      "id" :17,
+      "image": "https://img4.nbstatic.in/tr:w-350/5e284308d60180000dbbd915.jpg",
+      "name":"Fifty9 - Radisson Blu Marina Hotel",
+      "address":"Connaught Place",
+      "deal":"Buffet Offers",
+      "price":799,
+      "bought":1418
+      
+     },
+     {
+      "id" :18,
+      "image": "https://img4.nbstatic.in/tr:w-350/5e034cf4cff47e000b4e791d.jpg",
+      "name":"The Dineroom",
+      "address":"Punjabi Bagh West ",
+      "deal":"Drinks with Starters and Set Menu Meals & Buffet Offer",
+      "price":700,
+      "bought":1818
+      
+     },
+     {
+      "id" :19,
+      "image": "https://img4.nbstatic.in/tr:w-350/604efabf3eb5b6000b55cc1f.jpg",
+      "name":"Connaught Clubhouse",
+      "address":"Connaught Place",
+      "deal":"Beer & Drinks with Starters",
+      "price":1899,
+      "bought":1481
+      
+     },
+     {
+      "id" :20,
+      "image": "https://img4.nbstatic.in/tr:w-350/5bab4396c9e77c000d397fd4.jpg",
+      "name":"Salon Nirvana By SS",
+      "address":"Rajouri Garden",
+      "deal":"Salon Services",
+      "price":249,
+      "bought":773
+      
+     },
+     {
+      "id" :21,
+      "image": "https://img4.nbstatic.in/tr:w-500/5fb27d88c4d55d000bf92209.jpg",
+      "name":"Food Exchange - Hotel Novotel Aerocity",
+      "address":"Aerocity ",
+      "deal":"Buffets, Set Menu Meals",
+      "price":3321,
+      "bought":922
+      
+     },
+     {
+      "id" :22,
+      "image": "https://img4.nbstatic.in/tr:w-500/61c474db40e9df000b237421.jpg",
+      "name":"Cafe High 5",
+      "address":"Connaught Place ",
+      "deal":"Drinks with Starters",
+      "price":799,
+      "bought":1000
+      
+     },
+     {
+      "id" :23,
+      "image": "https://img4.nbstatic.in/tr:w-500/60509a7c79600c000ca59b99.jpg",
+      "name":"Spice It - Hotel Ibis",
+      "address":"Aerocity",
+      "deal":"Drinks with Starters",
+      "price":1102,
+      "bought":161
+      
+     },
+     {
+      "id" :24,
+      "image": "https://img4.nbstatic.in/tr:w-500/60631ce19b6019000bcf4b8a.jpg",
+      "name":"Cafe Knosh - The Leela Ambience Convention Hotel",
+      "address":"Rajouri Garden",
+      "deal":"Buffet Offers",
+      "price":750,
+      "bought":400
+      
+     },
+     {
+        "id" :25,
+        "image": "https://img4.nbstatic.in/tr:w-350/6030be7679600c000b340c09.jpg",
+        "name":"The Darzi Bar & Kitchen",
+        "address":"Connaught Place ",
+        "deal":"Drinks with Starters",
+        "price":1169,
+        "bought":495
+        
+       },
+       {
+        "id" :26,
+        "image": "https://img4.nbstatic.in/tr:w-500/5cb82ca8d60180000d7acbbd.jpg",
+        "name":"Pavilion 75 - WelcomHotel Dwarka",
+        "address":"Aerocity",
+        "deal":"Buffet Offers and Set Menu Meals",
+        "price":569,
+        "bought":495
+        
+       },
+       {
+        "id" :27,
+        "image": "https://img4.nbstatic.in/tr:w-350/6030be7679600c000b340c09.jpg",
+        "name":"The Darzi Bar & Kitchen",
+        "address":"Connaught Place ",
+        "deal":"Drinks with Starters",
+        "price":1169,
+        "bought":905
+        
+       },
+       {
+        "id" :28,
+        "image": "https://img4.nbstatic.in/tr:w-350/602102ec79600c000b33e564.jpg",
+        "name":"Duty-Free | Vayu Bar",
+        "address":"Rajouri Garden",
+        "deal":"Drinks with Starters",
+        "price":306,
+        "bought":905
+        
+       },
+       {
+        "id" :29,
+        "image": "https://img4.nbstatic.in/tr:w-500/61cd4af21e2731000bc3d417.jpg",
+        "name":"Level 2 - Radisson Blu",
+        "address":"Connaught Place ",
+        "deal":"Drinks with Starters",
+        "price":849,
+        "bought":905
+        
+       },
+       {
+        "id" :29,
+        "image": "https://img4.nbstatic.in/tr:w-350/5e8574dfd60180000c4fe5bb.jpg",
+        "name":"Smaaash - Noida Pub Exchange",
+        "address":"Aerocity",
+        "deal":"Buffet, Bowling and more",
+        "price":750,
+        "bought":905
+        
+       },
+       {
+        "id" :30,
+        "image": "https://img4.nbstatic.in/tr:w-350/5f0c2a0edc0e82000c3e9f60.jpg",
+        "name":"Glanz Studio Unisex Salon",
+        "address":"Aerocity",
+        "deal":"Salon Services",
+        "price":750,
+        "bought":905
+        
+       }
+
+       
+    ]
+ }

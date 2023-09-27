@@ -1,0 +1,270 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #e1e9ec;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+nav {
+    /* position: fixed; */
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10%;
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    border-bottom: 1px solid grey;
+}
+#logo {
+    background-color: transparent;
+}
+#logo img {
+    height: 50px;
+    margin: 5px 0px;
+    /* border: 1px solid blue; */
+}
+#search {
+    display: flex;
+    width: 45%;
+    height: 70%;
+    padding: 9px 0px;
+    align-items: center;
+}
+#search-box {
+    height: 96%;
+    width: 90%;
+    padding: 0px 10px;
+    border: 1px solid #CCC;
+    border-radius: 2px 0px 0px 2px;
+}
+#search-btn {
+    width: 100px;
+    height: 100%;
+    background-color: #ef534e;
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 2px;
+}
+
+/* Main section  */
+#mainsection{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: #DCDCDC;
+}
+#data-list{
+
+display: grid;
+grid-template-columns: repeat(3,1fr);
+grid-gap: 10px;
+overflow: hidden;
+
+padding:60px;
+
+}
+#btn{
+    background-color: #FF6347;
+    padding:3px 5px 2px 5px;
+}
+#filter{
+    background-color: white;
+    width: 20%;
+    margin-inline: auto;
+    padding-inline: 10px;
+}
+#sort-low-to-high, #sort-high-to-low {
+    padding: 5px 10px;
+    border: none;
+    color: white;
+    background-color: #ef534e;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-left: 5px;
+}
+#sort-button {
+    display: flex;
+    justify-content: end;
+}
+
+#card {
+    background-color: white;
+    padding: 15px;
+}
+.card_bought {
+    background-color: #f6f6f6;
+    color: #555;
+}
+
+.pagination-button{
+    font-size: 15px;
+    padding: 5px 40px 5px 40px;
+    background-color: white;
+}
+#pagination{
+    
+    text-align: center;
+    
+   
+}
+.card_img>img{
+
+min-width: 300px;
+max-width: 350px;
+
+
+}
+
+/* Bottom section  */
+.top {
+    background-color: #333;
+    padding: 30px 0px;
+    margin-top: 50px;
+}
+.top > div {
+    display: flex;
+    color: white;
+    font-size: 11px;
+    width: 80%;
+    margin: auto;
+}
+
+.top .left {
+    width: 85%;
+    padding: 0px 10px;
+    
+}
+.top .left h4 {
+    margin-bottom: 10px;
+}
+.top .right {
+    width: 15%;
+    padding: 0px 10px;
+}
+.top .right h3 {
+    margin-bottom: 10px;
+    color: #999
+}
+#social {
+    display: flex;
+}
+#social img {
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.bottom {
+    background-color: black;
+    color: white;
+    font-size: 13px;
+}
+.bottom > div {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    
+}
+.bottom .left {
+    width: 50%;
+}
+.bottom .left table {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: left;
+    height: 170px;
+    border-right: 1px solid grey;
+}
+.bottom .left p {
+    color: #999;
+}
+.bottom table a {
+    text-decoration: none;
+    color: white;
+}
+.bottom table th {
+    font-size: 16px;
+}
+.bottom table th {
+    margin: 10px 0px;
+    /* border: 1px solid red; */
+}
+.bottom table td {
+    margin: 10px 0px;
+    /* border: 1px solid red; */
+}
+.bottom table td > a:hover {
+    color: #ff2604;
+    transition: 0.3s;
+}
+
+.bottom .right {
+    width: 50%;
+}
+.bottom .right > div {
+    width: 65%;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+.bottom .right h3 {
+    margin-bottom: 18px;
+}
+.bottom .right a {
+    margin-bottom: 18px;
+    margin-right: 40px;
+}
+
+
+#app-links {
+    display: flex;
+    text-align: center;
+}
+#app-links img {
+    height: 40px;
+}
+#app-links a {
+    text-decoration: none;
+    color: white; 
+}
+
+@media (max-width: 900px) {
+    #data-list {
+        grid-template-columns: repeat(2,1fr);
+    }
+    #app-links {
+        flex-direction: column;
+        
+    }
+    #app-links a {
+        width: 100%;
+    }
+    #app-links p {
+        width: 100%;
+        text-align: center;
+    }
+    .top > div {
+        flex-direction: column;
+    }
+    .bottom > div {
+        flex-direction: column;
+    }
+    .bottom .left {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    #mainsection {
+        flex-direction: column;
+    }
+    #data-list {
+        grid-template-columns: repeat(1,1fr);
+    }
+    #filter {
+        display: flex;
+    }
+}
+

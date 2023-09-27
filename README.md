@@ -1,4 +1,3 @@
-
 # NextDoorBy - Clone of Nearbuy.com  
   
 ## Description  

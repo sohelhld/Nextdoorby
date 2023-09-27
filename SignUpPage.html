@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <style>
+        body{
+            margin: auto;
+            
+            /* opacity: 0; */
+            background-color: aqua;
+        }
+        .login{
+            margin: auto;
+            margin-top: 20px;
+            opacity: 1;
+            width: 300px;
+            height: 500px;
+            background-color: white;
+            text-align: center;
+        }
+        .inputs{
+            width: 290px;
+            height: 40px;
+            border: none;
+            
+        }
+        #inputMobileNumber{
+            display: none;
+        }
+        #signupButton{
+            color: white;
+            font-size: 20px;
+            width: 290px;
+            height: 60px;
+            border-radius: 5px;
+            border:1px solid black;
+            background-color: rgb(155, 205, 79);
+        }
+        #loginButton{
+            color: white;
+            font-size: 20px;
+            width: 290px;
+            height: 60px;
+            border-radius: 5px;
+            border:1px solid black;
+            background-color: rgb(155, 205, 79);
+            
+            
+        }
+        p{
+            font-size: 10px;
+        }
+        h3{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div  id="myForm" class="login">
+        <form action="">
+            <br>
+            <h3>SIGN UP</h3><br><br>
+
+            <!-- Input for user name -->
+            <input class="inputs" type="text" id="inputUserName" placeholder="Enter Full Name" name="name" required><br>
+            <!-- Input for user email -->
+            <input class="inputs" type="email" id="inputEmail" placeholder="Enter E-mail Address" required><br>
+            <!-- Input of users password -->
+            <input class="inputs" type="password" name="password" id="inputPassword" placeholder="Enter your password" required><br><br><br><br>
+            <!-- Button for singn in -->
+            <button id="signupButton" type="submit">Sign Up</button>
+            <br><br>
+            <!-- Button for login -->
+            <button id="loginButton" type="submit">Longin</button><br><br>
+            <!-- <button onclick="window.location.href='https://w3docs.com';"></button> -->
+            <p>By continuing, I accept TCP-bigbasket's Terms and Conditions and Privacy Policy.</p>
+        
+        </form>
+    </div>
+
+</body>
+</html>
+<script>
+
+    let allUserData = JSON.parse(localStorage.getItem("allUserData")) || [];
+    let inputUserName = document.querySelector('#inputUserName');
+    let inputEmail = document.querySelector('#inputEmail');
+    let inputPassword = document.querySelector('#inputPassword');
+    let loginButton = document.querySelector('#loginButton');
+    let signupButton = document.querySelector('#signupButton');
+    // inputUserName.style.display = "none";
+    loginButton.addEventListener('click', function(e){
+        e.preventDefault();
+        var myWindow = window.open("logginPage.html", "_self");
+    })
+
+
+    function isUserAllReadyExsist() {
+        let flag = false;
+        let arr = allUserData;
+        //console.log(arr);
+        if(arr.length == 0){
+            return false ;
+        }
+        let userEmail = inputEmail.value;
+        let userPassword = inputPassword.value;
+
+        arr.forEach(element => {
+                if (element.userPassword == userPassword && element.userEmail == userEmail) {
+                    flag = true;
+                    return;
+                }
+                
+        });
+        return flag;
+    }
+
+    signupButton.addEventListener('click', function(e){
+         e.preventDefault();
+        //  inputUserName.style.display = "block";
+            let userName = inputUserName.value;
+            let userEmail = inputEmail.value;
+            let userPassword = inputPassword.value;
+        if(userName != ''){
+            if(userEmail != ''){
+                if(userPassword != ''){
+                    if(isUserAllReadyExsist()) {
+                        alert("Your are already rgister"); 
+                    }else{
+                        let boj = {
+                            "userName" : userName,
+                            "userEmail" : userEmail,
+                            "userPassword" : userPassword
+                        }
+                        allUserData.push(boj);
+                        localStorage.setItem("allUserData", JSON.stringify(allUserData));
+                        alert("You are succesfully SignUp")
+                    }
+                    }else{
+                        alert("Please enter Password");
+                    }
+                }else{
+                alert("Please enter email address");
+            }
+         }else{
+            alert("Please enter Full name");
+         }
+        
+    })
+</script>

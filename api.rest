@@ -1,0 +1,5 @@
+###
+GET https://639b3492d5141501974eaf28.mockapi.io/nykaa
+
+###
+GET https://good-rose-bass-ring.cyclic.app/data

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Access:nextdoorby</title>
+    <link rel="stylesheet" href="admin.css">
+    <style>
+        #mainContainer{
+    width: 100%;
+    background-color: #C7C0F0;
+    /* border: 5px solid green; */
+    border-radius: 50px;
+    background-image: url(https://images.unsplash.com/photo-1508615039623-a25605d2b022?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fGJhY2tncm91bmQlMjBpbWFnZSUyMGZvciUyMHByb2R1Y3RzfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=600&q=60);
+}
+
+#main{
+    width:95%;    
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 32px;   
+    margin: auto;
+    /* border: 3px solid blue;    */
+    text-align: center;
+}
+#main form{
+    margin-left: 170%;
+}
+
+.card{
+    /* border: 1px solid red; */
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 20px;
+    /* background-image: url('https://images.unsplash.com/photo-1557683304-673a23048d34?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YmFja2dyb3VuZHxlbnwwfDF8MHx8&auto=format&fit=crop&w=600&q=60'); */
+}
+
+.card-img img{
+    width: 183px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+
+.name{
+    margin-bottom: 0px;
+}
+.rating,.price{
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+/* .price{
+    margin-top: 5px;
+    margin-bottom: 0px;
+} */
+.quantity{
+    margin-top: 5px;
+}
+#navbar{
+    height: 80px;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    background-image: url(https://png.pngtree.com/background/20210709/original/pngtree-dark-blue-galaxy-starry-background-material-picture-image_321659.jpg);
+}
+
+#navbar div{
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(4,1fr);
+    gap: 100px;
+   
+}
+#navbar button{
+    width: 200px;
+    height: 40px;
+    border: 0px;
+    background-color:#ffc765;
+    border-radius: 10px;
+}
+
+#removeProducts,#addProducts,#editProducts{
+    font-weight:900;
+}
+
+#addForm{
+    margin: center; 
+    width:250px;
+    /* border: 1px solid blueviolet; */
+
+}
+
+#addForm{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#heading{
+    /* border: 1px solid blue; */
+    width: 1200px;
+}
+
+#first{
+    display: flex;
+    margin: 70px;
+    /* border: 1px solid red; */
+    align-items:flex-end;
+}
+#first h2,#second h2{
+    margin-left:100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#first img,#second img{
+    width: 100px;
+}
+#second{
+    display: flex;
+    margin: 70px;
+    align-items: flex-end;
+}
+
+@media only screen and (max-width: 900px) {
+    #heading{
+        /* border: 1px solid blue; */
+        width: 800px;
+    }
+    #navbar div{
+        display: grid;
+        margin: auto;
+        grid-template-columns: repeat(3,1fr);
+       gap: 1px;       
+    }
+    #main{
+        grid-template-columns: repeat(3,1fr);
+    }
+    
+    
+
+}
+@media only screen and (max-width: 650px) {
+    #navbar{
+        height: 160px;
+        justify-content: space-around;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        border-radius: 50px;
+        background-image: url(https://png.pngtree.com/background/20210709/original/pngtree-dark-blue-galaxy-starry-background-material-picture-image_321659.jpg);
+    }
+    #navbar div{
+        display: grid;
+        margin: auto;
+        grid-template-columns: repeat(1,1fr);
+        gap: 1px;       
+    }
+    #heading{
+        /* border: 1px solid blue; */
+        width: 150%;
+    }
+    #first img,#second img{
+        display: none;
+    }
+    #first h2,#second h2{
+        margin-left:0px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #main{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+#logOut{
+    font-family: Arial, Helvetica, sans-serif;
+}
+@media only screen and (max-width: 450px){
+    #heading{
+        visibility: collapse;
+    }
+    #navbar button{
+        width: 100px;
+        height: 40px;
+        border: 0px;
+        background-color:#ffc765;
+        border-radius: 10px;
+    }
+    #main{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+    </style>
+</head>
+<body>
+    
+    <div id="mainContainer">
+        <nav id="navbar">
+            
+        </nav>
+        <div id="main">
+           
+        </div>
+    </div>
+    
+</body>
+<script >
+    let navBar = document.getElementById("navbar");
+const url = "https://good-rose-bass-ring.cyclic.app/data";
+let mainSection = document.getElementById("main");
+
+//--------------------------------------------//
+//navbar
+navBar.innerHTML = `
+<div>
+    <button id="removeProducts">All Products</button>
+    <button id="addProducts">Add Product</button>
+    <button id="editProducts">Edit Product</button>
+    <button id="logOut">Log out</button>
+</div>
+`;
+let removeProductsButton = document.getElementById("removeProducts");
+let userData=JSON.parse(localStorage.getItem("webUserData"))||[];
+
+logOut.addEventListener('click',()=>{
+//   window.location.href='/logginPage.html'
+var myWindow = window.open("logginPage.html", "_self");
+})
+
+window.addEventListener("load", (event) => {
+  event.preventDefault();
+  fetch(url)
+      .then((res) => res.json())
+      .then((data) => {
+        let totalProducts=data.length;
+        mainSection.innerHTML = `  
+        <div id="heading">
+        <h1>DASHBOARD</h1> 
+        <div id="first">
+        <img src="https://cdn-icons-png.flaticon.com/128/456/456212.png">
+        <h2>TOTAL USERS :----  ${userData.length}</h2>
+        </div>
+        <div id="second">
+        <img src="https://cdn-icons-png.flaticon.com/128/1474/1474613.png">
+        <h2>TOTAL PRODUCTS :---- ${totalProducts}</h2>  
+        </div>
+        </div>        
+        `;
+      });
+});
+
+//--------------------------------------------//
+//Remove
+removeProductsButton.addEventListener("click", () => {
+  fetchAndRenderAll();
+});
+
+function fetchAndRenderAll() {
+  try {
+    fetch(url)
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data.length);
+      totalProducts=data.length
+      renderList(data);
+    });
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+function renderList(data) {
+  let CardList = `
+    ${data
+      .map((ele) =>
+        card(
+         
+          ele.deal,
+          ele.id,
+          ele.image,
+          ele.name,
+          ele.price,
+          ele.bought,
+          ele.address
+         
+        )
+      )
+      .join("")}    
+    `;
+  mainSection.innerHTML = CardList;
+
+  // let allbtn = document.querySelectorAll("#removeButton");
+  // console.log(allbtn);
+
+  let allCards = document.querySelectorAll(".card");
+  // console.log(allCards);
+  var clickedId;
+  for (let i = 0; i < allCards.length; i++) {
+    allCards[i].lastElementChild.lastElementChild.addEventListener(
+      "click",
+      () => {
+        // console.log(allCards[i].dataset.id);
+        clickedId = allCards[i].dataset.id;
+        console.log(clickedId);
+        // console.log(`${allCards[i].childNodes}`)
+        fetch(`${url}/${clickedId}`, {
+          method: "DELETE",
+          headers: {
+            "Content-type": "application/json",
+          },
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            console.log(data);
+            fetchAndRenderAll()
+          });
+      }
+    );
+  }
+}
+
+function card( deal, id, image, name, price, bought, address) {
+  let card = `
+        <div class="card" data-id=${id}>
+            <div class="card-img">
+                <img src=${image} alt='image'>
+            </div>
+            <div class="card-body">
+                <h3 class="name">${name}</h3>
+                <div class="description">${deal}</div>
+                <h3 class="rating">Bought: ${bought}</h3>
+                <h3 class='price'>Price: ${price}</h3>
+                <h3 class="quantity">Address: ${address}</h3>
+                <button id="removeButton">Remove</button>
+              </div>
+        </div>        
+        `;
+  return card;
+}
+
+//--------------------------------------------------//
+// addProducts
+addProducts.addEventListener("click", () => {
+  addProductForm();
+});
+
+function addProductForm() {
+  mainSection.innerHTML = `
+    <form id="addForm" >
+    <label for="name" >Product Name : </label><br>
+    <input type="text" id="name" required><br>
+   
+    <label for="price">Product Price : </label><br>
+    <input type="number" id="price" required><br>
+
+    <label for="deal">Product Details : </label><br>
+    <input type="text" id="details" required><br>
+ 
+
+    <label for="bought">Product Bought: </label><br>
+    <input type="number" id="ratings" min="1"  required><br>
+
+    <label for="address">Address : </label><br>
+    <input type="text" id="quantity"  required><br>
+
+
+    <label for="image">Product Image : </label><br>
+    <input type="text" id="image" required><br>
+
+    <hr>
+    <input type="submit" value="Submit">
+    </form>    
+    `;
+      /*
+  description===deal
+  rating = bought
+  quantity= address
+  */
+/*
+ 
+   <label for="category">Product Bought : </label><br>
+    <input type="text" id="category" required><br>
+      
+
+    
+*/
+  const myform = document.getElementById("addForm");
+  const addName = document.getElementById("name");
+  // const addCategory = document.getElementById("category");
+  const addPrice = document.getElementById("price");
+  const addDetails = document.getElementById("details");
+  const addRatings = document.getElementById("ratings");
+  const addQuantity = document.getElementById("quantity");
+  const addImage = document.getElementById("image");
+
+  myform.addEventListener("submit", (e) => {
+    e.preventDefault();
+    var productObject = {
+      name: addName.value,
+     
+      price: addPrice.value,
+      deal: addDetails.value,
+      bought: addRatings.value,
+      address: addQuantity.value,
+      image: addImage.value,
+    };
+    addProductToAPI(productObject);
+  });
+}
+//  category: addCategory.value,
+function addProductToAPI(obj) {
+  fetch(url, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(obj),
+  })
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data);
+      addProductForm()
+    })
+    .catch((err) => alert("error"));
+}
+
+//-------------------------------------------------------//
+// edit
+let editProducts=document.getElementById('editProducts');
+editProducts.addEventListener("click", () => {
+  editProduct();
+});
+//type="number"
+function editProduct() {
+  mainSection.innerHTML = `
+    <form id="addForm" >
+    <label for="id" >Please Enter Id : </label><br>
+    <input  id="id" required><br>
+
+    <label for="name" >Product Name : </label><br>
+    <input type="text" id="name" required><br>
+   
+    <label for="price">Product Price : </label><br>
+    <input type="number" id="price" required><br>
+
+    <label for="deal">Product Details : </label><br>
+    <input type="text" id="details" required><br>
+ 
+
+    <label for="bought">Product Bought: </label><br>
+    <input type="number" id="ratings" min="1"  required><br>
+
+    <label for="address">Address : </label><br>
+    <input type="text" id="quantity"  required><br>
+
+
+    <label for="image">Product Image : </label><br>
+    <input type="text" id="image" required><br>
+
+    <hr>
+    <input type="submit" value="Submit">
+    </form>  
+    `;
+
+  const myform = document.getElementById("addForm");
+  const id = document.getElementById("id");
+  const addName = document.getElementById("name");
+  // const addCategory = document.getElementById("category");
+  const addPrice = document.getElementById("price");
+  const addDetails = document.getElementById("details");
+  const addRatings = document.getElementById("ratings");
+  const addQuantity = document.getElementById("quantity");
+  const addImage = document.getElementById("image");
+
+  myform.addEventListener("submit", (e) => {
+    e.preventDefault();
+    var productObject = {
+      name: addName.value,
+     
+     price: addPrice.value,
+     deal: addDetails.value,
+     bought: addRatings.value,
+     address: addQuantity.value,
+     image: addImage.value,
+    };
+    editProductFromAPI(productObject, id.value);
+  });
+}
+
+function editProductFromAPI(obj, id) {
+  fetch(`${url}/${id}`, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json",
+    },
+
+    body: JSON.stringify(obj),
+  })
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data)
+      editProduct();
+    })
+    .catch((err) => alert("error"));
+}
+
+</script>
+</html>

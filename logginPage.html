@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: auto;
+            
+            /* opacity: 0; */
+            background-color: aqua;
+        }
+        .login{
+            margin: auto;
+            margin-top: 20px;
+            opacity: 1;
+            width: 300px;
+            height: 500px;
+            background-color: white;
+            text-align: center;
+        }
+        .inputs{
+            width: 290px;
+            height: 40px;
+            border: none;
+            
+        }
+        #inputMobileNumber{
+            display: none;
+        }
+        #signupButton{
+            color: white;
+            font-size: 20px;
+            width: 290px;
+            height: 60px;
+            border-radius: 5px;
+            border:1px solid black;
+            background-color: rgb(155, 205, 79);
+        }
+        #loginButton{
+            color: white;
+            font-size: 20px;
+            width: 290px;
+            height: 60px;
+            border-radius: 5px;
+            border:1px solid black;
+            background-color: rgb(155, 205, 79);
+            
+            
+        }
+        p{
+            font-size: 10px;
+        }
+        h3{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div  id="myForm" class="login">
+        <form action="">
+            <br>
+            <h3>LOGIN</h3><br><br><br>
+            <!-- Input for user name -->
+            <input class="inputs" type="text" id="inputUserName" placeholder="Enter Full Name" required><br>
+            <!-- Input for user email -->
+            <input class="inputs" type="email" id="inputEmail" placeholder="Enter E-mail Address" required><br>
+            <!-- Input of users password -->
+            <input class="inputs" type="password" name="password" id="inputPassword" placeholder="Enter your password" required><br><br><br><br>
+            <!-- Button for login -->
+            <button id="loginButton" type="submit">Longin</button><br><br>
+            <!-- Button for singn in -->
+            <button id="signupButton" type="submit">Sign Up</button>
+            <br><br>
+            <!-- <button onclick="window.location.href='https://w3docs.com';"></button> -->
+            <p>By continuing, I accept TCP-NextDoorBy Terms and Conditions and Privacy Policy.</p>
+        
+        </form>
+    </div>
+
+</body>
+</html>
+<script>
+
+    let allUserData = JSON.parse(localStorage.getItem("allUserData")) || [];
+    let inputUserName = document.querySelector('#inputUserName');
+    let inputEmail = document.querySelector('#inputEmail');
+    let inputPassword = document.querySelector('#inputPassword');
+    let loginButton = document.querySelector('#loginButton');
+    let signupButton = document.querySelector('#signupButton');
+    inputUserName.style.display = "none";
+    
+    loginButton.addEventListener('click', function(e){
+         e.preventDefault();
+         inputUserName.style.display = "none";
+        let userEmail = inputEmail.value;
+        let userPassword = inputPassword.value;
+        if(userEmail==="admin"  && userPassword==="admin"){
+                    alert("Well come admin")
+                    var myWindow = window.open("admin.html", "_self");
+                   
+         }else if(userEmail != ''){
+            if(userPassword != ''){
+                let arr = allUserData;
+                if(arr.length == 0){
+                    alert("User not found Please register!");
+                }
+                let emailFlag = false;
+                let passwordFlag = false;
+                arr.forEach(element => {
+                    if (element.userEmail == userEmail) {
+                        emailFlag = true;
+                        if (element.userPassword == userPassword) {
+                            passwordFlag = true;
+                        }
+                    }
+                        
+                });
+
+
+                if (emailFlag) {
+                    if (passwordFlag) {
+                        var myWindow = window.open("Home.html", "_self");
+                        alert('You are succesfully login');
+                    }else{
+                        alert("Wrong Password");
+                    }
+                }else{
+                    alert("Wrong E-mail");
+                }
+
+
+                }else{
+                    alert("Please enter Password");
+                }
+            }else{
+            alert("Please enter email address");
+        }
+    })
+
+
+    signupButton.addEventListener('click', function(e){
+         e.preventDefault();
+         var myWindow = window.open("SignUpPage.html", "_self");
+        // window.location.href='/SingUpPage.html'
+    })
+
+
+</script>
